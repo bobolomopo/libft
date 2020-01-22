@@ -6,7 +6,7 @@
 /*   By: jandre <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/07 09:36:49 by jandre            #+#    #+#             */
-/*   Updated: 2019/11/04 19:34:54 by jandre           ###   ########.fr       */
+/*   Updated: 2020/01/22 11:32:30 by jandre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,5 +69,7 @@ void			ft_lstclear(t_list **lst, void (*del)(void*));
 void			ft_lstiter(t_list *lst, void (*f)(void *));
 t_list			*ft_lstmap(t_list *lst, void *(*f)(void *),
 		void (*del)(void *));
+char			*ft_strnew(unsigned int size);
+char			*ft_strcpy(char *dst, const char *src);
 
 #endif

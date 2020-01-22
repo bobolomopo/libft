@@ -1,35 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jandre <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/07 10:11:42 by jandre            #+#    #+#             */
-/*   Updated: 2020/01/22 11:25:02 by jandre           ###   ########.fr       */
+/*   Created: 2020/01/22 11:17:36 by jandre            #+#    #+#             */
+/*   Updated: 2020/01/22 11:44:40 by jandre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t size)
+char	*ft_strnew(unsigned int size)
 {
-	size_t	i;
-	size_t	retour;
+	char	*result;
 
-	if (dst == NULL || src == NULL)
-		return (0);
-	retour = ft_strlen(src);
-	if (size == 0)
-		return (retour);
-	if (retour == 0)
-		dst[0] = '\0';
-	i = 0;
-	while (i < size - 1 && src[i])
-	{
-		dst[i] = src[i];
-		i++;
-	}
-	dst[i] = '\0';
-	return (retour);
+	if (!(result = (char *)malloc(sizeof(char) * size + 1)))
+		return (NULL);
+	ft_bzero(result, (size + 1));
+	return (result);
 }
