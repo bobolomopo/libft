@@ -1,0 +1,1 @@
+Projet 42 de libft, pour l'instant les fonctions bonus sur les listes ne fonctionnent pas.
