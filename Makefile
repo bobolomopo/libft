@@ -20,7 +20,7 @@ SRC := ft_atoi.c ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isprint.c 
 	  ft_strtrim.c ft_itoa.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c \
 	  ft_putnbr_fd.c ft_strmapi.c ft_split.c ft_isdigit.c ft_substr.c \
 	  ft_strjoin.c ft_calloc.c ft_strdup.c ft_nbrlen.c ft_strnew.c \
-	  ft_nbrlen_base.c ft_itoa_base.c ft_atoll.c ft_atol.c
+	  ft_nbrlen_base.c ft_itoa_base.c 
 SRC_DIR = ./srcs
 OBJ := $(SRC:.c=.o)
 BONUS := ft_lstadd_back_bonus.c ft_lstadd_front_bonus.c \
