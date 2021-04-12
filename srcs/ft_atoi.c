@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jandre <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: jandre <jandre@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/07 18:13:20 by jandre            #+#    #+#             */
-/*   Updated: 2019/11/04 11:39:24 by jandre           ###   ########.fr       */
+/*   Updated: 2021/04/12 14:20:18 by jandre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ static long	ft_negative(char c)
 	return (1);
 }
 
-int			ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
 	size_t			i;
 	long			neg;
@@ -30,7 +30,7 @@ int			ft_atoi(const char *str)
 	i = 0;
 	neg = 1;
 	while (str[i] == ' ' || str[i] == '\n' || str[i] == '\v'
-			|| str[i] == '\t' || str[i] == '\f' || str[i] == '\r')
+		|| str[i] == '\t' || str[i] == '\f' || str[i] == '\r')
 		i++;
 	if (str[i] == '-' || str[i] == '+')
 	{
