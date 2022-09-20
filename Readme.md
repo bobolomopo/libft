@@ -7,3 +7,7 @@ Ce premier projet en tant qu'étudiant de 42 va vous faire consolider vos acquis
 ## Resultats
 
 ![](images/Resultats.png)
+
+### Notes
+
+Les bonus ne sont pas bons, à retravailler.
