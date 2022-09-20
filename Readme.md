@@ -1,4 +1,4 @@
-# Premier projet de 42
+# Libft : Premier projet de 42
 
 ## Description
 
