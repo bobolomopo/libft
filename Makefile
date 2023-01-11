@@ -43,11 +43,11 @@ all: $(NAME)
 
 clean:
 	@echo "cleaning objects..."
-	@/bin/rm -f $(OBJ) $(BOBJ)
+	@rm -f $(OBJ) $(BOBJ)
 
 fclean: clean
 	@echo "cleaning library..."
-	@/bin/rm -f $(NAME)
+	@rm -f $(NAME)
 
 re: fclean all
 
